@@ -2,22 +2,32 @@
   "name": "@cml/google-maps-scraper",
   "version": "1.0.0",
   "description": "A fast and reliable Google Maps scraping tool for Node.js. Extract business listings including names, ratings, reviews, phone numbers, and Google Maps URLs. Includes a CLI and Excel export.",
-  "main": "src/index.js",
-  "module": "src/index.js",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
   "type": "module",
   "exports": {
-    ".": "./src/index.js"
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs"
+    }
   },
   "bin": {
-    "gmaps-scraper": "./bin/gmaps-scraper.js"
+    "gmaps-scraper": "./dist/gmaps-scraper.js"
   },
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "test": "NODE_OPTIONS=--experimental-vm-modules node node_modules/jest/bin/jest.js",
+    "test": "vitest",
+    "test:watch": "vitest --watch",
+    "test:coverage": "vitest --coverage",
+    "test:ui": "vitest --ui",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "format": "prettier --write .",
     "clean": "rm -rf dist coverage *.xlsx",
-    "prepublishOnly": "npm test && npm run lint"
+    "build": "tsup",
+    "prepublishOnly": "npm run build && npm test && npm run lint"
   },
   "keywords": [
     "google",
@@ -74,17 +84,19 @@
     "node": ">=18.0.0"
   },
   "dependencies": {
-    "puppeteer": "^24.30.0",
-    "exceljs": "^4.4.0",
-    "commander": "^14.0.2",
     "chalk": "^5.6.2",
-    "ora": "^9.0.0"
+    "commander": "^14.0.2",
+    "exceljs": "^4.4.0",
+    "ora": "^9.0.0",
+    "puppeteer": "^24.30.0"
   },
   "devDependencies": {
-    "jest": "^30.2.0",
+    "@vitest/coverage-v8": "^4.0.8",
     "eslint": "^9.39.1",
-    "prettier": "^3.3.3",
     "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-import": "^2.29.1"
+    "eslint-plugin-import": "^2.29.1",
+    "prettier": "^3.3.3",
+    "tsup": "^8.5.1",
+    "vitest": "^4.0.8"
   }
 }

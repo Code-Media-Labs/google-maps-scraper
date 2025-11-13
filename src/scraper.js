@@ -146,10 +146,16 @@ function readExistingData(filePath) {
 
 function mergeAndDeduplicateData(existingData, newData) {
   const uniqueMap = new Map();
-  [...existingData, ...newData].forEach((business) => {
+
+  // Defensive check: ensure both parameters are arrays
+  const existing = Array.isArray(existingData) ? existingData : [];
+  const incoming = Array.isArray(newData) ? newData : [];
+
+  [...existing, ...incoming].forEach((business) => {
     if (business.maps_link && !uniqueMap.has(business.maps_link)) {
       uniqueMap.set(business.maps_link, business);
     }
   });
+
   return Array.from(uniqueMap.values());
 }
