@@ -27,7 +27,8 @@
     "format": "prettier --write .",
     "clean": "rm -rf dist coverage *.xlsx",
     "build": "tsup",
-    "prepublishOnly": "npm run build && npm test && npm run lint"
+    "prepublishOnly": "npm run build && npm test && npm run update-badge &&npm run lint",
+    "update-badge": "node scripts/update-coverage-badge.js"
   },
   "keywords": [
     "google",

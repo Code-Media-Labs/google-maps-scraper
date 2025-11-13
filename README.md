@@ -8,6 +8,7 @@ Built and maintained by **[Code Media Labs](http://codemedialabs.in)**.
 
 <p align="left">
   <img src="https://img.shields.io/npm/v/@cml/google-maps-scraper" alt="NPM Version" />
+  <img src="https://img.shields.io/badge/coverage-81%25-yellowgreen" alt="Coverage" />
   <img src="https://img.shields.io/npm/dm/@cml/google-maps-scraper" alt="NPM Downloads" />
   <img src="https://img.shields.io/github/stars/Code-Media-Labs/google-maps-scraper" alt="GitHub Stars" />
   <img src="https://img.shields.io/github/issues/Code-Media-Labs/google-maps-scraper" alt="GitHub Issues" />
