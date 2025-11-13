@@ -1,8 +1,5 @@
 {
-  "name": "google-maps-scraper",
-  "publishConfig": {
-    "access": "public"
-  },
+  "name": "@cml/google-maps-scraper",
   "version": "1.0.1",
   "description": "A fast and reliable Google Maps scraping tool for Node.js. Extract business listings including names, ratings, reviews, phone numbers, and Google Maps URLs. Includes a CLI and Excel export.",
   "main": "./dist/index.js",
