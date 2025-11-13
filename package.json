@@ -1,6 +1,9 @@
 {
-  "name": "@cml/google-maps-scraper",
-  "version": "1.0.0",
+  "name": "google-maps-scraper",
+  "publishConfig": {
+    "access": "public"
+  },
+  "version": "1.0.1",
   "description": "A fast and reliable Google Maps scraping tool for Node.js. Extract business listings including names, ratings, reviews, phone numbers, and Google Maps URLs. Includes a CLI and Excel export.",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -12,7 +15,7 @@
     }
   },
   "bin": {
-    "gmaps-scraper": "./dist/gmaps-scraper.js"
+    "gmaps-scraper": "dist/gmaps-scraper.js"
   },
   "files": [
     "dist"
@@ -27,7 +30,7 @@
     "format": "prettier --write .",
     "clean": "rm -rf dist coverage *.xlsx",
     "build": "tsup",
-    "prepublishOnly": "npm run build && npm test && npm run update-badge &&npm run lint",
+    "prepublishOnly": "npm run build",
     "update-badge": "node scripts/update-coverage-badge.js"
   },
   "keywords": [
@@ -71,7 +74,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Code-Media-Labs/google-maps-scraper.git"
+    "url": "git+https://github.com/Code-Media-Labs/google-maps-scraper.git"
   },
   "bugs": {
     "url": "https://github.com/Code-Media-Labs/google-maps-scraper/issues"

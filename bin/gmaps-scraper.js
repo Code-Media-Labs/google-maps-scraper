@@ -17,7 +17,7 @@ program
       "A powerful Google Maps scraping tool to extract business listings (name, rating, reviews, phone, Maps URL) and export results as JSON + Excel."
     )
   )
-  .version("1.0.0", "-v, --version", "Show the current version");
+  .version("1.0.1", "-v, --version", "Show the current version");
 
 program
   .command("scrape")
