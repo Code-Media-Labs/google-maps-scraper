@@ -297,19 +297,19 @@ sudo npm install -g @cml/google-maps-scraper
 
 ### Project Structure
 
-`google-maps-scraper/
+google-maps-scraper/
 ├── bin/
-│   └── gmaps-scraper.js
+│ └── gmaps-scraper.js
 ├── src/
-│   ├── scraper.js
-│   ├── excelConverter.js
-│   └── index.js
+│ ├── scraper.js
+│ ├── excelConverter.js
+│ └── index.js
 ├── tests/
-│   └── scraper.test.js
-│   └── excelConverter.test.js
+│ └── scraper.test.js
+│ └── excelConverter.test.js
 ├── package.json
-├── tsconfig.json
-└── README.md`
+├── vitest.config.js
+└── README.md
 
 ---
 
