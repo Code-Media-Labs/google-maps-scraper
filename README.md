@@ -10,16 +10,16 @@ A powerful **Node.js CLI tool and JavaScript library** for scraping **Google Map
 
 ## 📋 Table of Contents
 
-- [Features](#-features)
-- [Prerequisites](#-prerequisites)
-- [Installation](#-installation)
-- [CLI Usage](#-cli-usage)
-- [Library Usage](#-library-usage-nodejs)
-- [Examples](#-examples)
-- [Troubleshooting](#-troubleshooting)
-- [Development](#-development)
-- [Contributing](#-contributing)
-- [License](#-license)
+- [Features](#features)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [CLI Usage](#cli-usage)
+- [Library Usage (Node.js)](#library-usage-nodejs)
+- [Examples](#examples)
+- [Troubleshooting](#troubleshooting)
+- [Development](#development)
+- [Contributing](#contributing)
+- [License](#license)
 
 ---
 
@@ -240,7 +240,7 @@ scrapeMultiple();
 
 ---
 
-## 🔍 Troubleshooting
+## Troubleshooting
 
 ### 1. Missing TypeScript during build
 
@@ -273,7 +273,7 @@ sudo npm install -g @cml/google-maps-scraper
 
 ---
 
-## 🛠️ Development
+## Development
 
 ### Clone Repo
 
@@ -313,7 +313,7 @@ google-maps-scraper/
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 1.  Fork the repo
 2.  Create a branch:
