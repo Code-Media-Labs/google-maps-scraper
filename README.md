@@ -4,7 +4,7 @@ _This project is currently in alpha and under active development._
 
 A powerful **Node.js CLI tool and JavaScript library** for scraping **Google Maps business listings** using Puppeteer — with automatic JSON + Excel (XLSX) export. Built and maintained by **[Code Media Labs](https://codemedialabs.in)**.
 
-<p align="left"> <img src="https://img.shields.io/npm/v/@cml/google-maps-scraper" /> <img src="https://img.shields.io/badge/coverage-81%25-yellowgreen" /> <img src="https://img.shields.io/npm/dm/@cml/google-maps-scraper" /> <img src="https://img.shields.io/github/stars/Code-Media-Labs/google-maps-scraper" /> <img src="https://img.shields.io/github/issues/Code-Media-Labs/google-maps-scraper" /> <img src="https://img.shields.io/github/license/Code-Media-Labs/google-maps-scraper" /> <img src="https://img.shields.io/badge/Node-%3E%3D18.0.0-green" /> </p>
+<p align="left"> <img src="https://img.shields.io/npm/v/gmaps-scraper" /> <img src="https://img.shields.io/badge/coverage-81%25-yellowgreen" /> <img src="https://img.shields.io/npm/dm/gmaps-scraper" /> <img src="https://img.shields.io/github/stars/Code-Media-Labs/google-maps-scraper" /> <img src="https://img.shields.io/github/issues/Code-Media-Labs/google-maps-scraper" /> <img src="https://img.shields.io/github/license/Code-Media-Labs/google-maps-scraper" /> <img src="https://img.shields.io/badge/Node-%3E%3D18.0.0-green" /> </p>
 
 ---
 
